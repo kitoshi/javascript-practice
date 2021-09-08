@@ -1,4 +1,4 @@
-let boxes = [2, 0];
+let boxes = [2, 0, 5];
 
 let pos = 0;
 
@@ -18,7 +18,7 @@ const dockYard = (arr, pos, box) => {
   } else if (remainder === 2) {
     evenedArr = [eventotal + 1, eventotal + 1, eventotal];
   }
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < arr.length; i++) {
     while (arr[i] !== evenedArr[i]) {
       switch (pos) {
         case 0:
